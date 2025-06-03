@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+        nav{
+            text-align: center;
+            padding: 10px;
+            
+            background-color: #fff;
+        }
+        #Home , #yt {
+            border: 3px solid black;
+            margin: 5px;
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: small;
+            border-radius: 5px;
+            color: black;
+            background-color: rgb(209, 220, 216);
+            text-decoration: none;
+            
+        }
+        .center{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #clock{
+            font-size: 40px;
+            background-color: rgb(28, 227, 253);
+            padding: 20px 50px;
+            margin-top: 10px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/" id="Home" aria-current="page">Home</a>
+        <a target="_blank" id="yt" href="https://youtube.com">Youtube Channel</a>
+    </nav>
+    <div class="center">
+        <div id="banner"><span>Digital Clock Time</span></div>
+        <div id="clock"></div>
+    </div>
+</body>
+<script src="shubh.js"></script>
+
+</html>

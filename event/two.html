@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Shubham and Code</h1>
+    <br>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+    const sayShubham = function () {
+        console.log("Shubham");
+    }
+    // after a certain time program will excuted one time only
+    setTimeout(sayShubham, 3000) // refrence of the function is given here 
+    // it is also a method of set timeout.
+
+    const changeH1 = function () { document.querySelector('h1').innerHTML = "Best Coder Shubham" }
+
+    const changeMe = setTimeout(changeH1,2000)
+
+    document.querySelector('#Stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("Stop");
+        
+    })
+</script>
+
+</html>

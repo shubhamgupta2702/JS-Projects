@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: #fff;
+    }
+</style>
+<body>
+    <h2 class="name">Shubham The Coder</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let printstart;
+    let name = document.querySelector('.name')
+    const strtcode = function(){
+        if (printstart == null) {
+            
+            printstart = setInterval(printing,1000)
+            
+        }
+        function printing () {
+            console.log('Shubham Is best Coder' , Date.now())
+            name.innerHTML = '<div>Shubham Is JS Expert</div>';
+        }
+    }
+
+    const stopcode = function(){
+        clearInterval(printstart)
+        name.innerHTML =  '<h2 class="name">Shubham The Coder</h2>'
+        printstart = null;
+        
+    }
+
+
+
+
+
+    document.querySelector('#start').addEventListener('click' , strtcode)
+    document.querySelector('#stop').addEventListener('click' , stopcode)
+
+
+
+
+
+
+
+</script>
+</html>
