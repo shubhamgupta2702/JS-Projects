@@ -21,7 +21,7 @@ Welcome to my collection of interactive JavaScript projects! This repository sho
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/js-dom-projects.git
+   [[git clone https://github.com/yourusername/js-dom-projects.git](https://github.com/shubhamgupta2702/JS-Projects.git)]
    ```
 2. Navigate to any project folder:
    ```bash
